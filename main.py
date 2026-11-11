@@ -56,6 +56,11 @@ def main():
         jumlah_lulus += 1
 
 
+    
+
+
+
+
 
     print(ringkasan(total_nilai, jumlah_lulus, 1))
 
