@@ -42,6 +42,9 @@ def main():
     
     total += struk("Rina", 1, 10, False)
     total += struk("Sari", 5, 25, False)
+    total += struk("tono", 5, 25, True )
+    total += struk("umar", 2, 30, True )
+    total += struk("vina", 8, 15, False)
 
 
 

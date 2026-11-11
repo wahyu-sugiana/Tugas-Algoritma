@@ -30,7 +30,7 @@ def proses_mahasiswa(nama, tugas, uts, uas):
     if apakah_lulus(huruf):
         keterangan = "lulus"
     else:
-        keterangan = "modar"
+        keterangan = "tidak lulus"
 
     print(nama + " Nilainya = " + str(akhir) + " " + "Predikatnya = " + str(huruf) + " " +keterangan)
     return akhir
@@ -49,19 +49,28 @@ def main():
     if apakah_lulus(nilai_huruf(akhir)):
         jumlah_lulus += 1
 
+    akhir = proses_mahasiswa("bunga", 90, 85, 88)
+    total_nilai += akhir
+    if apakah_lulus(nilai_huruf(akhir)):
+        jumlah_lulus += 1
 
-    akhir = proses_mahasiswa("momog", 80, 50, 20)
+    akhir = proses_mahasiswa("citra", 60, 45, 50)
+    total_nilai += akhir
+    if apakah_lulus(nilai_huruf(akhir)):
+        jumlah_lulus += 1
+
+    akhir = proses_mahasiswa("dimas", 75, 80, 65)
+    total_nilai += akhir
+    if apakah_lulus(nilai_huruf(akhir)):
+        jumlah_lulus += 1
+
+    akhir = proses_mahasiswa("eka", 30, 40, 35)
     total_nilai += akhir
     if apakah_lulus(nilai_huruf(akhir)):
         jumlah_lulus += 1
 
 
     
-
-
-
-
-
     print(ringkasan(total_nilai, jumlah_lulus, 1))
 
 
